@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // dariaft etelat
+        System.out.print("Enter the numerator of the first fraction: ");
+        int numerator1 = input.nextInt();
+
+        System.out.print("Enter the denominator of the first fraction: ");
+        int denominator1 = input.nextInt();
+
+        System.out.print("Enter the numerator of the second fraction: ");
+        int numerator2 = input.nextInt();
+
+        System.out.print("Enter the denominator of the second fraction: ");
+        int denominator2 = input.nextInt();
+
+        // mohasebat
+        double result = (double) (numerator1 / denominator1) * (numerator2 / denominator2);
+
+        //natije
+        System.out.printf("The result is %.2f", result);
+    }
+}
