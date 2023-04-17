@@ -1,16 +1,22 @@
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int m, n;
-        System.out.print("Enter the value of m: ");
-        m = input.nextInt();
-        System.out.print("Enter the value of n: ");
-        n = input.nextInt();
-        int a = (m * m) - (n * n);
-        int b = 2 * m * n;
-        int c = (m * m) + (n * n);
-        System.out.println("The Pythagorean triple for m=" + m + " and n=" + n + " is (" + a + "," + b + "," + c + ")");
+
+        // gereftan sanie
+        System.out.print("Enter the number of seconds: ");
+        int sanie = input.nextInt();
+
+        // mohasebe
+        int saat = sanie / 3600;
+        sanie %= 3600;
+
+        int min = sanie / 60;
+        sanie %= 60;
+
+        // neshan dadan natije
+        System.out.printf("%d hours, %d minutes, %d seconds", saat, min, sanie);
     }
 }
+
