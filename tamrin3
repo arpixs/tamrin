@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // daryaft vroodi
+        System.out.print("Enter the length of the garden: ");
+        double gardenLength = input.nextDouble();
+
+        System.out.print("Enter the width of the garden: ");
+        double gardenWidth = input.nextDouble();
+
+        System.out.print("Enter the length of the house: ");
+        double houseLength = input.nextDouble();
+
+        System.out.print("Enter the width of the house: ");
+        double houseWidth = input.nextDouble();
+
+        // mohasebat
+        double gardenArea = gardenLength * gardenWidth;
+        double houseArea = houseLength * houseWidth;
+
+        double mowingArea = gardenArea - houseArea;
+
+        double mowingTimeInMinutes = (mowingArea / 2.3) / 60;
+
+        // neshan dadan natije
+        System.out.println("The time required to mow the lawn is " + mowingTimeInMinutes + " minutes.");
+    }
+}
