@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // khandan 2 adad
+        System.out.print("Enter the first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        // mohasebat
+        int sum = num1 + num2;
+        int menha = num1 - num2;
+        int zarb = num1 * num2;
+        int taghsim = num1 / num2;
+        int baghiemande = num1 % num2;
+
+        // neshan dadan natije
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + menha);
+        System.out.println("Zarb: " + zarb);
+        System.out.println("Taghsim: " + taghsim);
+        System.out.println("Baghi mande: " + baghiemande);
+    }
+}
