@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // gereftan vorodi haie lazem
+        System.out.print("Enter the distance traveled (in km): ");
+        double fasele = input.nextDouble();
+
+        System.out.print("Enter the cost per liter of gasoline: ");
+        double costPerLiter = input.nextDouble();
+
+        System.out.print("Enter the fuel consumption (in liters per km): ");
+        double fuleCost = input.nextDouble();
+
+        // mohasebat
+        double totalCost = fasele * fuleCost * costPerLiter;
+
+        // neshan dadan natije
+        System.out.println("The total cost of the trip is " + totalCost + " tooman.");
+    }
+}
